@@ -1,0 +1,62 @@
+/* common css start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a  {
+    text-decoration: none;
+}
+h1 {
+    color: lightpink;
+    text-align: center;
+}
+/* common css end */
+/* Nav part start */
+nav {
+    background-color: black;
+    width: 600px;
+    margin: auto; 
+    font-family: Arial;
+    margin: 16px auto;
+}
+
+Nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: antiquewhite;
+    display: inline-block;
+    padding: 15px 35px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+
+}
+nav ul li:hover a {
+    background-color: red;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0% ;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+nav ul li :hover a::after {
+    width: 100%;
+   
+}
+
+
+
+/* Nav part end */
